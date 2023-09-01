@@ -1,0 +1,101 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 13,
+    "prettier.tabWidth": 4,
+    "editor.detectIndentation": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "GitBash": {
+            "path": "G:\\ProgramFiles\\Git\\bin\\bash.exe"
+            // "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.fontSize": 14,
+    "workbench.tree.indent": 16,
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": false,
+    "C_Cpp.default.compilerPath": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe",
+    "editor.rulers": [
+        80
+    ],
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {   
+            "text": "TODO:",
+            "color": "#fff",
+            "backgroundColor": "#109126"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#000",
+            "backgroundColor": "#f8fc00"
+        },
+        {
+            "text": "BUG:",
+            "color": "#fff",
+            "backgroundColor": "#ff0000"
+        },
+        {
+            "text": "FIXME:",
+            "color": "#fff",
+            "backgroundColor": "#de3ea9"
+        },
+        {
+            "text": "IDEA:",
+            "color": "#000",
+            "backgroundColor": "#00f4fc"
+        },
+        {
+            "text": "WARNING:",
+            "color": "#fff",
+            "backgroundColor": "#e67700"
+        }
+    ],
+    "editor.multiCursorLimit": 100000,
+    "markdown-preview-github-styles.colorTheme": "dark",
+    "markdown-preview-github-styles.darkTheme": "dark_dimmed"
+}
