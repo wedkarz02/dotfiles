@@ -1,0 +1,43 @@
+"*":
+  "atom-beautify":
+    cpp:
+      beautify_on_save: true
+    general: {}
+  "atom-material-ui":
+    colors:
+      abaseColor: "#89ddff"
+      paintCursor: true
+    tabs:
+      compactTabs: true
+    ui:
+      panelContrast: true
+  "bracket-colorizer":
+    alternate_consecutive: true
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    disabledPackages: [
+      "bracket-colorizer"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "material-palenight-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor:
+    defaultFontSize: 18
+    fontSize: 16
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "24c64c9c-5968-442f-9575-a67dcb01b666"
+  "file-icons": {}
+  pigments: {}
+  welcome:
+    showOnStartup: false
+  "wrap-guide": {}
