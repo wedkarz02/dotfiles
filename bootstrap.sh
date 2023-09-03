@@ -3,9 +3,11 @@
 RED="\e[31m"
 RESET="\e[0m"
 
+cwd="${pwd}";
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
+echo ""
 
 function install() {
     rsync --exclude ".git/" \
@@ -15,6 +17,7 @@ function install() {
           --exclude "README.md" \
           --exclude "bootstrap.sh" \
           -avh --no-perms --progress bash/ git/ vim/ ~;
+    source "$HOME/.profile";
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -28,3 +31,4 @@ else
     fi
 fi
 unset install;
+cd $cwd;
