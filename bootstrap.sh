@@ -1,13 +1,13 @@
-#!/bin/bash -i
+#!/bin/bash
 
-RED="\e[31m"
-RESET="\e[0m"
+RED="\e[31m";
+RESET="\e[0m";
 
-cwd="${pwd}";
+cwd=$(pwd);
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
-echo ""
+echo "";
 
 function install() {
     rsync --exclude ".git/" \
@@ -23,7 +23,7 @@ function install() {
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     install;
 else
-    echo -ne "${RED}[WARNING]:${RESET} This may overwrite existing files in your home directory. Are you sure? (y/n) "
+    echo -ne "${RED}[WARNING]:${RESET} This may overwrite existing files in your home directory. Are you sure? (y/n) ";
     read -n 1;
 	echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
