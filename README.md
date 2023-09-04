@@ -21,7 +21,7 @@ $ source bootstrap.sh
 The script will prompt you with one last warning: 
 <br />
 <br />
-<mark><span style="color:#ff444b; font-weight:bold">[Warning]</span> This may overwrite existing files in your home directory. Are you sure? (y/n)</mark>
+``[Warning] This may overwrite existing files in your home directory. Are you sure? (y/n)``
 <br />
 <br />
 which you can skip with ```--force``` or ```-f``` flag:
