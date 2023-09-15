@@ -1,6 +1,5 @@
 {
     "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 13,
     "prettier.tabWidth": 4,
     "editor.detectIndentation": false,
     "terminal.integrated.profiles.windows": {
@@ -77,6 +76,11 @@
             "text": "NOTE:",
             "color": "#000",
             "backgroundColor": "#f8fc00"
+        },
+        {
+            "text": "SECTION:",
+            "color": "#000",
+            "backgroundColor": "#07f793"
         },
         {
             "text": "BUG:",
