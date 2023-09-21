@@ -13,6 +13,7 @@ function install() {
     rsync --exclude ".git/" \
           --exclude "atom/" \
           --exclude "vscode/" \
+          --exclude "win-term/" \
           --exclude "LICENSE" \
           --exclude "README.md" \
           --exclude "bootstrap.sh" \
