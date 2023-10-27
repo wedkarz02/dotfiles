@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -15,10 +16,6 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -26,19 +23,28 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": {},
         "list": 
         [
             {
-                "opacity": 0.5,
-                "colorScheme": "Banana Blueberry",
+                "colorScheme": "Material Palenight",
                 "commandline": "wsl.exe ~ -d Ubuntu",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
@@ -46,29 +52,28 @@
                 "hidden": false,
                 "intenseTextStyle": "bright",
                 "name": "Ubuntu",
+                "opacity": 75,
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "C:\\Users\\wedkarz",
                 "tabTitle": null,
                 "useAcrylic": true
             },
             {
-                "opacity": 0.69999999999999996,
                 "colorScheme": "Banana Blueberry",
-                "commandline": "powershell.exe",
                 "cursorShape": "filledBox",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell",
+                "opacity": 70,
                 "useAcrylic": true
             },
             {
-                "opacity": 0.5,
                 "colorScheme": "LiquidCarbonTransparent",
-                "commandline": "cmd.exe",
                 "cursorShape": "filledBox",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
+                "opacity": 50,
                 "useAcrylic": true
             },
             {
@@ -78,7 +83,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "opacity": 0.5,
                 "colorScheme": "Banana Blueberry",
                 "commandline": "G:\\ProgramFiles\\Git\\bin\\bash.exe",
                 "cursorShape": "filledBox",
@@ -89,6 +93,7 @@
                 "guid": "{748bab07-3631-4eb1-b697-2cdc0d0ca1e0}",
                 "icon": "D:\\Pictures\\Git-Icon-White.png",
                 "name": "GitBash",
+                "opacity": 50,
                 "useAcrylic": true
             }
         ]
@@ -417,5 +422,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": []
 }
