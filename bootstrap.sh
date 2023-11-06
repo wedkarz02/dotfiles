@@ -10,43 +10,24 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin main;
 echo "";
 
-# This is kinda ugly but works nicely, might rewrite later.
 function install() {
-    declare -a bash_files=('.bash_aliases' '.bash_logout' '.bashrc' '.profile');
-    declare -a git_files=('.gitconfig');
-    declare -a vim_files=('.vimrc');
+    declare -a dot_dirs=('bash' 'vim' 'git');
 
-    for file in "${bash_files[@]}"; do 
-        echo "[INFO] Creating symlink: $HOME/$file -> $(pwd)/bash/$file";
-        ln -s -f $(pwd)/bash/$file $HOME/$file;
+    for dot_dir in "${dot_dirs[@]}"; do
+        cd $dot_dir;
 
-        if [ $? -ne 0 ]; then
-            echo -e "${RED}[ERROR]${RESET}: Creating symlink failed.";
-        else
-            echo -e "${GREEN}[DONE]${RESET}: Symlink created successfully.";
-        fi
-    done
+        for file_name in .[!.]*; do
+            echo "[INFO] Creating symlink: $HOME/$file_name -> $(pwd)/$file_name";
+            ln -s -f $(pwd)/$file_name $HOME/$file_name;
 
-    for file in "${git_files[@]}"; do 
-        echo "[INFO] Creating symlink: $HOME/$file -> $(pwd)/git/$file";
-        ln -s -f $(pwd)/git/$file $HOME/$file;
+            if [ $? -ne 0 ]; then
+                echo -e "${RED}[ERROR]${RESET}: Creating symlink failed.";
+            else
+                echo -e "${GREEN}[DONE]${RESET}: Symlink created successfully.";
+            fi
+        done
 
-        if [ $? -ne 0 ]; then
-            echo -e "${RED}[ERROR]${RESET}: Creating symlink failed.";
-        else
-            echo -e "${GREEN}[DONE]${RESET}: Symlink created successfully.";
-        fi
-    done
-
-    for file in "${vim_files[@]}"; do 
-        echo "[INFO] Creating symlink: $HOME/$file -> $(pwd)/vim/$file";
-        ln -s -f $(pwd)/vim/$file $HOME/$file;
-
-        if [ $? -ne 0 ]; then
-            echo -e "${RED}[ERROR]${RESET}: Creating symlink failed.";
-        else
-            echo -e "${GREEN}[DONE]${RESET}: Symlink created successfully.";
-        fi
+        cd ..;
     done
 
     source "$HOME/.profile";
