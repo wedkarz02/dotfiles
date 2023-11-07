@@ -7,7 +7,10 @@ RESET="\033[0m";
 cwd=$(pwd);
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin main;
+git fetch --all;
+git reset --hard origin/main;
+git pull;
+
 echo "";
 
 function install() {
