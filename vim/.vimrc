@@ -1,3 +1,5 @@
+syntax on
+
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
