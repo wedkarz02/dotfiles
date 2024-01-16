@@ -1,8 +1,10 @@
-let mapleader = ","
+let mapleader = " "
 
 syntax on
 
 nnoremap <leader>s :w<CR>
+nnoremap <leader>qf :q!<CR>
+nnoremap <leader>sq :wq<CR>
 nnoremap <leader>e :Explore<CR>
 
 inoremap ( ()<Left>
