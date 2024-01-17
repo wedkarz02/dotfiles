@@ -111,13 +111,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.colorTheme": "Tokyo Night Storm",
-
-    //"vim.insertModeKeyBindings": [
-    //    {
-    //        "before": ["k", "j"],
-    //        "after": ["<Esc>"],
-    //    }
-    //]
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#7287a8",
+        "editorLineNumber.activeForeground": "#d2e1fa"
+    },
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -126,7 +123,7 @@
         {
             "before": ["leader", "w"],
             "commands": [
-                "workbench.action.files.save"
+                "workbench.action.files.save",
             ]
         },
         {
@@ -136,5 +133,5 @@
     ],
     "vim.handleKeys": {
         "<C-f>": false
-    }
+    },
 }
