@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    /*
     // CUSTOM ARROWS START:
     // ------------ ARROWS NAVIGATE --------------
     {
@@ -93,5 +94,5 @@
         "when": "editorTextFocus",
         "command": "selectby.addNewSelection",
         "args": {"offset": 2}
-      }
+    }*/
 ]
