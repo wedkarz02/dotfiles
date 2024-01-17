@@ -38,6 +38,7 @@
     ],
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 8,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -118,12 +119,13 @@
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
+    "vim.foldfix": true,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
             "before": ["leader", "w"],
             "commands": [
-                "workbench.action.files.save",
+                "workbench.action.files.save"
             ]
         },
         {
@@ -131,7 +133,33 @@
             "commands": [":q"]
         }
     ],
-    "vim.handleKeys": {
-        "<C-f>": false
-    },
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [ ">" ],
+            "commands": [ "editor.action.indentLines" ]
+        },
+        {
+            "before": [ "<" ],
+            "commands": [ "editor.action.outdentLines" ]
+        },
+        {
+            "before": ["<S-j>"],
+            "commands": [ "editor.action.moveLinesDownAction" ]
+        },
+        {
+            "before": ["<S-k>"],
+            "commands": [ "editor.action.moveLinesUpAction" ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+           "before": ["<C-d>"],
+           "after": ["<C-d>", "z", "z"]
+        },
+        {
+           "before": ["<C-u>"],
+           "after": ["<C-u>", "z", "z"]
+        }
+    ],
+    "vim.handleKeys": {}
 }
