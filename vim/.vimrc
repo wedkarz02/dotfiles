@@ -2,9 +2,8 @@ let mapleader = " "
 
 syntax on
 
-nnoremap <leader>s :w<CR>
-nnoremap <leader>qf :q!<CR>
-nnoremap <leader>sq :wq<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
 nnoremap <leader>e :Explore<CR>
 
 inoremap ( ()<Left>
