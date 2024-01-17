@@ -30,7 +30,6 @@
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     "terminal.integrated.fontSize": 14,
     "workbench.tree.indent": 16,
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": false,
     "C_Cpp.default.compilerPath": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe",
@@ -43,7 +42,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnSave": true
     },
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
@@ -103,7 +102,32 @@
             "backgroundColor": "#e67700"
         }
     ],
-    "editor.multiCursorLimit": 100000,
+    "editor.multiCursorLimit": 1000,
     "markdown-preview-github-styles.colorTheme": "dark",
-    "markdown-preview-github-styles.darkTheme": "dark_dimmed"
+    "markdown-preview-github-styles.darkTheme": "dark_dimmed",
+    "lldb.suppressUpdateNotifications": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Tokyo Night Storm",
+
+    //"vim.insertModeKeyBindings": [
+    //    {
+    //        "before": ["k", "j"],
+    //        "after": ["<Esc>"],
+    //    }
+    //]
+    "editor.lineNumbers": "relative",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["leader", "w"],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ]
 }
