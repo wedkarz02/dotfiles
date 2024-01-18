@@ -12,7 +12,8 @@ inoremap { {}<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 
-set rnu 
+set number
+set relativenumber
 set si
 set ai
 set shiftwidth=4
