@@ -120,6 +120,7 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.foldfix": true,
+    "vim.cursorStylePerMode.insert": "block",
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
