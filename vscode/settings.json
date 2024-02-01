@@ -120,58 +120,57 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "vscode-neovim.neovimExecutablePaths.linux": "/home/wedkarz/.local/bin/nvim",
-    "vscode-neovim.useWSL": true,
-    "vscode-neovim.neovimInitVimPaths.linux": "/home/wedkarz/.config/nvim/init.lua",
-    "workbench.startupEditor": "none"
+
+    // "vscode-neovim.neovimExecutablePaths.linux": "/home/wedkarz/.local/bin/nvim",
+    // "vscode-neovim.useWSL": true,
+    // "vscode-neovim.neovimInitVimPaths.linux": "/home/wedkarz/.config/nvim/init.lua",
+
+    "workbench.startupEditor": "none",
     
-    // This is for the Vim emulator extention. Switched to neovim integration
-    // but I will leave this here just in case I want to go back for some reason.
-    //
-    // "vim.useSystemClipboard": true,
-    // "vim.useCtrlKeys": true,
-    // "vim.foldfix": true,
-    // "vim.cursorStylePerMode.insert": "block",
-    // "vim.leader": "<space>",
-    // "vim.normalModeKeyBindings": [
-    //     {
-    //         "before": ["leader", "w"],
-    //         "commands": [
-    //             "workbench.action.files.save"
-    //         ]
-    //     },
-    //     {
-    //         "before": ["leader", "q"],
-    //         "commands": [":q"]
-    //     }
-    // ],
-    // "vim.visualModeKeyBindings": [
-    //     {
-    //         "before": [ ">" ],
-    //         "commands": [ "editor.action.indentLines" ]
-    //     },
-    //     {
-    //         "before": [ "<" ],
-    //         "commands": [ "editor.action.outdentLines" ]
-    //     },
-    //     {
-    //         "before": ["<S-j>"],
-    //         "commands": [ "editor.action.moveLinesDownAction" ]
-    //     },
-    //     {
-    //         "before": ["<S-k>"],
-    //         "commands": [ "editor.action.moveLinesUpAction" ]
-    //     }
-    // ],
-    // "vim.normalModeKeyBindingsNonRecursive": [
-    //     {
-    //        "before": ["<C-d>"],
-    //        "after": ["<C-d>", "z", "z"]
-    //     },
-    //     {
-    //        "before": ["<C-u>"],
-    //        "after": ["<C-u>", "z", "z"]
-    //     }
-    // ],
-    // "vim.handleKeys": {}
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.foldfix": true,
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["leader", "w"],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": ["leader", "q"],
+            "commands": [":q"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [ ">" ],
+            "commands": [ "editor.action.indentLines" ]
+        },
+        {
+            "before": [ "<" ],
+            "commands": [ "editor.action.outdentLines" ]
+        },
+        {
+            "before": ["<S-j>"],
+            "commands": [ "editor.action.moveLinesDownAction" ]
+        },
+        {
+            "before": ["<S-k>"],
+            "commands": [ "editor.action.moveLinesUpAction" ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+           "before": ["<C-d>"],
+           "after": ["<C-d>", "z", "z"]
+        },
+        {
+           "before": ["<C-u>"],
+           "after": ["<C-u>", "z", "z"]
+        }
+    ],
+    "vim.handleKeys": {}
 }
