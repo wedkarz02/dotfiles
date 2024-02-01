@@ -24,14 +24,23 @@ function install() {
             ln -s -f $(pwd)/$file_name $HOME/$file_name;
 
             if [ $? -ne 0 ]; then
-                echo -e "${RED}[ERROR]${RESET}: Creating symlink failed.";
+                echo -e "${red}[error]${reset}: creating symlink failed.";
             else
-                echo -e "${GREEN}[DONE]${RESET}: Symlink created successfully.";
+                echo -e "${green}[done]${reset}: symlink created successfully.";
             fi
         done
 
         cd ..;
     done
+
+    echo "[INFO] Creating symlink: $HOME/.config/nvim/ -> $(pwd)/nvim/";
+    ln -s -f "$(pwd)/nvim $HOME/.config"
+
+    if [ $? -ne 0 ]; then
+        echo -e "${red}[error]${reset}: creating symlink failed.";
+    else
+        echo -e "${green}[done]${reset}: symlink created successfully.";
+    fi
 
     source "$HOME/.profile";
 }
