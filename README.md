@@ -31,3 +31,4 @@ $ source bootstrap.sh --force
 
 # Thanks to:
  - [Mathias Bynens](https://github.com/mathiasbynens) for the basic bootstrap script from his [dotfiles](https://github.com/mathiasbynens/dotfiles).
+ - [ThePrimeagen](https://github.com/ThePrimeagen) for a great neovim setup [tutorial](https://www.youtube.com/watch?v=w7i4amO_zaE).
