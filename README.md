@@ -11,6 +11,23 @@ To download this repository use the ```git clone``` command:
 $ git clone https://github.com/wedkarz02/dotfiles.git
 ```
 
+# Installing Neovim
+
+This step is completely optional, just a quick instruction on installing Neovim
+via a tarball. Go to [Neovim releases page](https://github.com/neovim/neovim/releases), grab a link to *nvim-linux64.tar.gz* file and use the ```wget``` command to download it:
+```bash
+$ cd ~/.local/bin
+$ wget [tarball-link]
+$ tar xzvf nvim-linux64.tar.gz
+$ rm nvim-linux64.tar.gz
+```
+
+Create a symlink to nvim executable:
+
+```bash
+$ ln -s nvim-linux64/bin/nvim nvim
+```
+
 # Usage
 To update your config files ```source``` the ```bootstrap.sh``` script:
 ```bash
