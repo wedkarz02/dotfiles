@@ -7,12 +7,6 @@ RESET="\033[0m";
 cwd=$(pwd);
 cd "$(dirname "${BASH_SOURCE}")";
 
-git fetch --all;
-git reset --hard origin/main;
-git pull;
-
-echo "";
-
 function install() {
     declare -a dot_dirs=('bash' 'vim' 'git');
 
@@ -45,10 +39,20 @@ function install() {
     source "$HOME/.profile";
 }
 
+echo -ne "Synchronize with Github? This action will overwrite any local changes. (y/n): ";
+read -n 1;
+echo -e "\n";
+
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    git fetch --all;
+    git reset --hard origin/main;
+    echo ""
+fi
+
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     install;
 else
-    echo -ne "${RED}[WARNING]${RESET}: This may overwrite existing files in your home directory. Are you sure? (y/n) ";
+    echo -ne "${RED}[WARNING]${RESET}: This may overwrite existing files in your home directory. Are you sure? (y/n): ";
     read -n 1;
 	echo -e "\n";
     
