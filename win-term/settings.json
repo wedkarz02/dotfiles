@@ -24,10 +24,10 @@
             },
             "keys": "alt+shift+d"
         },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        }
+        //{
+        //    "command": "paste",
+        //    "keys": "ctrl+v"
+        //}
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
