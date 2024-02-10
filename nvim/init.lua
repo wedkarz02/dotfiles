@@ -1,1 +1,3 @@
-require("wedkarz")
+-- require("wedkarz")
+require("kickstart")
+
