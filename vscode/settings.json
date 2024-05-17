@@ -42,6 +42,9 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[python]": {
         "editor.formatOnSave": true
     },
@@ -103,7 +106,7 @@
             "backgroundColor": "#e67700"
         }
     ],
-    "editor.multiCursorLimit": 1000,
+    "editor.multiCursorLimit": 100,
     "markdown-preview-github-styles.colorTheme": "dark",
     "markdown-preview-github-styles.darkTheme": "dark_dimmed",
     "lldb.suppressUpdateNotifications": true,
@@ -120,16 +123,9 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-
-    // "vscode-neovim.neovimExecutablePaths.linux": "/home/wedkarz/.local/bin/nvim",
-    // "vscode-neovim.useWSL": true,
-    // "vscode-neovim.neovimInitVimPaths.linux": "/home/wedkarz/.config/nvim/init.lua",
-
     "workbench.startupEditor": "none",
-    
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
-    "vim.foldfix": true,
     "vim.cursorStylePerMode.insert": "block",
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
@@ -142,6 +138,12 @@
         {
             "before": ["leader", "q"],
             "commands": [":q"]
+        },
+        {
+            "before": ["leader", "p", "v"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -172,5 +174,7 @@
            "after": ["<C-u>", "z", "z"]
         }
     ],
-    "vim.handleKeys": {}
+    "vim.handleKeys": {},
+    "editor.stickyScroll.enabled": false,
+    "accessibility.signals.sounds.volume": 0
 }
