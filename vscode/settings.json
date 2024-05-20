@@ -140,7 +140,7 @@
             "commands": [":q"]
         },
         {
-            "before": ["leader", "p", "v"],
+            "before": ["leader", "s", "f"],
             "commands": [
                 "workbench.action.quickOpen"
             ]
