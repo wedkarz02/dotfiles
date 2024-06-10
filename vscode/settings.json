@@ -28,6 +28,7 @@
         }
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "editor.fontSize": 12,
     "terminal.integrated.fontSize": 14,
     "workbench.tree.indent": 12,
     "editor.fontFamily": "JetBrains Mono",
