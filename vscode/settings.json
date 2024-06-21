@@ -53,6 +53,10 @@
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -112,9 +116,6 @@
     "markdown-preview-github-styles.darkTheme": "dark_dimmed",
     "lldb.suppressUpdateNotifications": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "workbench.colorTheme": "Tokyo Night Storm",
     "workbench.colorCustomizations": {
         "editorLineNumber.foreground": "#7287a8",
@@ -145,6 +146,12 @@
             "commands": [
                 "workbench.action.quickOpen"
             ]
+        },
+        {
+            "before": ["leader", "i"],
+            "commands": [
+                "editor.action.showHover"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -163,12 +170,6 @@
         {
             "before": ["<S-k>"],
             "commands": [ "editor.action.moveLinesUpAction" ]
-        },
-        {
-            "before": ["leader", "i"],
-            "commands": [
-                "editor.action.showHover"
-            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -183,5 +184,9 @@
     ],
     "vim.handleKeys": {},
     "editor.stickyScroll.enabled": false,
-    "accessibility.signals.sounds.volume": 0
+    "accessibility.signalOptions": {
+        "volume": 0
+    },
+    "editor.minimap.renderCharacters": false,
+    "breadcrumbs.enabled": false
 }
