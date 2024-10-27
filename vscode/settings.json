@@ -17,14 +17,10 @@
         },
         "GitBash": {
             "path": "G:\\ProgramFiles\\Git\\bin\\bash.exe"
-            // "source": "Git Bash"
         },
         "Ubuntu (WSL)": {
             "path": "C:\\Windows\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
+            "args": ["-d", "Ubuntu"]
         }
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
@@ -33,10 +29,7 @@
     "workbench.tree.indent": 12,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": false,
-    "C_Cpp.default.compilerPath": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe",
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [80],
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorSurroundingLines": 8,
@@ -55,6 +48,19 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.acceptSuggestionOnCommitCharacter": false
+    },
+    "[sql]": {
+        "editor.formatOnSave": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "full"
+    },
+    "[dockercompose]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": true
     },
     "editor.tokenColorCustomizations": {
@@ -75,7 +81,7 @@
     "todohighlight.isEnable": true,
     "todohighlight.isCaseSensitive": true,
     "todohighlight.keywords": [
-        {   
+        {
             "text": "TODO:",
             "color": "#fff",
             "backgroundColor": "#109126"
@@ -133,9 +139,7 @@
     "vim.normalModeKeyBindings": [
         {
             "before": ["leader", "w"],
-            "commands": [
-                "workbench.action.files.save"
-            ]
+            "commands": ["workbench.action.files.save"]
         },
         {
             "before": ["leader", "q"],
@@ -143,50 +147,41 @@
         },
         {
             "before": ["leader", "s", "f"],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
+            "commands": ["workbench.action.quickOpen"]
         },
         {
             "before": ["leader", "i"],
-            "commands": [
-                "editor.action.showHover"
-            ]
+            "after": ["g", "h"]
         }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": [ ">" ],
-            "commands": [ "editor.action.indentLines" ]
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
         },
         {
-            "before": [ "<" ],
-            "commands": [ "editor.action.outdentLines" ]
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
         },
         {
             "before": ["<S-j>"],
-            "commands": [ "editor.action.moveLinesDownAction" ]
+            "commands": ["editor.action.moveLinesDownAction"]
         },
         {
             "before": ["<S-k>"],
-            "commands": [ "editor.action.moveLinesUpAction" ]
+            "commands": ["editor.action.moveLinesUpAction"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-           "before": ["<C-d>"],
-           "after": ["<C-d>", "z", "z"]
+            "before": ["<C-d>"],
+            "after": ["<C-d>", "z", "z"]
         },
         {
-           "before": ["<C-u>"],
-           "after": ["<C-u>", "z", "z"]
+            "before": ["<C-u>"],
+            "after": ["<C-u>", "z", "z"]
         }
     ],
-    "vim.handleKeys": {},
     "editor.stickyScroll.enabled": false,
-    "accessibility.signalOptions": {
-        "volume": 0
-    },
-    "editor.minimap.renderCharacters": false,
     "breadcrumbs.enabled": false
 }
