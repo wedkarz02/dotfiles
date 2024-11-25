@@ -182,6 +182,12 @@
             "after": ["<C-u>", "z", "z"]
         }
     ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [ "j", "k" ],
+            "after": [ "<Esc>", "l" ]
+        }
+    ],
     "editor.stickyScroll.enabled": false,
     "breadcrumbs.enabled": false
 }
