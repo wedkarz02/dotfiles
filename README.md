@@ -1,7 +1,7 @@
 # .files
 
 This repo is just a messy collection of my personal config files.
-Feel free to grab anything that seems interesting to you. Keep in mind that I work on WSL Ubuntu so some files in this repo are for Windows and should be copied manually.  \
+Feel free to grab anything that seems interesting to you. Keep in mind that I work on WSL Ubuntu so some files in this repo are for Windows and should be copied manually.
 
 > [!WARNING]
 > Please review everything in this repo before running the bootstrap. It was configured to work on my system and might ruin yours if you're not careful. Use at your own risk!
