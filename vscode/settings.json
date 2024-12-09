@@ -185,7 +185,7 @@
     "vim.insertModeKeyBindings": [
         {
             "before": [ "j", "k" ],
-            "after": [ "<Esc>", "l" ]
+            "after": [ "<Esc>" ]
         }
     ],
     "editor.stickyScroll.enabled": false,
